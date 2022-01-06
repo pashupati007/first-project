@@ -44,20 +44,18 @@
                   <div>
                     <v-img
                       :src="require('~/assets/img/blog2.png')"
-                      max-height="125"
+                      max-height="350"
                       max-width="120"
                     ></v-img>
                   </div>
                   <v-list-item-content>
-                    <v-list-item-title class="font-weight-bold text-sm-left">
+                    <v-list-item-title>
                       <h1 class="font font-weight-bold text-sm-left">
                         Experience Of <br />
                         Blood Donation
                       </h1></v-list-item-title
                     >
-                    <v-list-item-subtitle
-                      class="font-weight-medium text-sm-left"
-                    >
+                    <v-list-item-subtitle>
                       <p class="font font-weight-medium text-sm-left">
                         Maintaining adequdle blood supplies requires the<br />
                         recruitment of a significant number of regular<br />
@@ -83,14 +81,12 @@
                     ></v-img>
                   </div>
                   <v-list-item-content>
-                    <v-list-item-title class="font-weight-bold text-sm-left">
+                    <v-list-item-title>
                       <h1 class="font font-weight-bold text-sm-left">
                         Donate Blood
                       </h1>
                     </v-list-item-title>
-                    <v-list-item-subtitle
-                      class="font-weight-medium text-sm-left"
-                    >
+                    <v-list-item-subtitle>
                       <p class="font font-weight-medium text-sm-left">
                         your blood journeys through<br />
                         many steps and tests that <br />
@@ -115,14 +111,12 @@
                     </v-img>
                   </div>
                   <v-list-item-content>
-                    <v-list-item-title class="font-weight-bold text-sm-left">
+                    <v-list-item-title>
                       <h1 class="font font-weight-bold text-sm-left">
                         Donate Blood
                       </h1>
                     </v-list-item-title>
-                    <v-list-item-subtitle
-                      class="font-weight-medium text-sm-left"
-                    >
+                    <v-list-item-subtitle>
                       <p class="font font-weight-medium text-sm-left">
                         your blood journeys through<br />
                         many steps and tests that <br />
