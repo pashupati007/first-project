@@ -1,5 +1,7 @@
 <template>
-  <div :height="height" :width="width">
+  <div class="pa-10" :height="height" :width="width">
+    <v-card 
+      class="b pb-10">
     <v-container>
       <v-row>
         <v-col cols="12" class="text-center pt-10">
@@ -79,6 +81,7 @@
         </v-col>
       </v-row>
     </v-container>
+    </v-card>
   </div>
 </template>
 <style lang="css">

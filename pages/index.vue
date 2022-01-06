@@ -16,10 +16,9 @@
     </div>
 
     <div >
-      <v-card 
-      class="b pb-10">
+      
         <LandingWhy />
-      </v-card>
+      
     </div>
 
     <div>
