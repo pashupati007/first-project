@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-app-bar light flat>
+    <v-app-bar light flat text-lg-h2 text-md-h3 text-sm-h4>
       <p class="mt-3 ml-5 logo text-lg-h4 text-md-h5 text-sm-h6">
         LOGO
       </p>
@@ -165,7 +165,7 @@
       </v-card>
     </v-dialog>
 
-    
+
   </div>
 </template>
 
@@ -197,13 +197,3 @@ export default {
   color: #c71c1e;
 }
 </style>
-
-//
-<script>
-//   export default {
-//     data: () => ({
-//       items: ['Foo', 'Bar', 'Fizz', 'Buzz'],
-//     }),
-//   }
-//
-</script>
