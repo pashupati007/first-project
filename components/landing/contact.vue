@@ -112,7 +112,7 @@
   background-color: white !important;
 }
 .space {
-  line-height: 3px;
+  line-height: 10px !important;
 }
 .h1blood {
   color: white !important;
