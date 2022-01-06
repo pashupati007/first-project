@@ -1,6 +1,6 @@
 <template>
   <div class="pa-10" :height="height" :width="width">
-    <v-card class="b pb-10">
+    <v-card class="border pt-lg-5 pb-lg-10">
       <v-container>
         <v-row>
           <v-col cols="12" class="text-center pt-10">
@@ -97,7 +97,7 @@
   font-family: poppins;
 }
 
-.b {
+.border {
   border: 1px solid #ccc !important;
   border-radius: 50px 0 !important;
 }
