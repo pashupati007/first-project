@@ -2,8 +2,8 @@
   <div>
     <v-container>
       <v-row>
-        <v-col>
-          <p class=".donate text-lg-h3 text-md-h4  mt-5 font-weight-bold">
+        <v-col class="text-lg-h3 text-md-h4 text-sm-h5">
+          <p class="donate mt-5 font-weight-bold">
             DONATE BLOOD,<br />
             Save a Life!
           </p>
@@ -11,8 +11,8 @@
       </v-row>
 
       <v-row>
-        <v-col>
-          <p class=".donate text-lg-h5 text-md-h6 font-weight-regular mt-n5 mb-10">
+        <v-col class="text-lg-h5 text-md-h6 text-sm-h6">
+          <p class="donate font-weight-regular mt-n5 mb-10">
             Your donation will go to save countless lives and so is appreciated,
             time and <br />
             time again. <br />
@@ -20,23 +20,31 @@
           </p>
         </v-col>
       </v-row>
-   
+
       <v-row>
-        <v-col>
-          <v-btn class="mt-16 pt-5 pb-5 font-weight-bold">
-            DONATE NOW 
-            <v-img class="mb-1 " :src="require('~/assets/img/dropbtn.png')" width="70" height="70"></v-img>
+        <v-col class="text-lg-h5 text-md-h6 text-sm-h6">
+          <v-btn class="btn mt-16 pt-5 pb-5 font-weight-bold">
+            DONATE NOW
+            <v-img
+              class="mb-1"
+              :src="require('~/assets/img/dropbtn.png')"
+              width="70"
+              height="70"
+            ></v-img>
           </v-btn>
         </v-col>
       </v-row>
     </v-container>
-
-    
   </div>
 </template>
 
 <style>
-  .donate{
-    font-family: Poppins;
-  }
+.donate {
+  font-family: Poppins;
+}
+
+  .btn:hover{
+  background-color: red !important;
+  color: #fff !important;
+}
 </style>
