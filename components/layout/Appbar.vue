@@ -37,6 +37,8 @@
       </v-btn>
     </v-app-bar>
 
+
+
     <v-dialog v-model="loginDialog" max-width="450" ma>
       <v-card class="logshadow pl-5 pt-10 pr-10 pb-10">
         <h1 class="font-weight-bold text-center mb-3">Log in</h1>
@@ -89,6 +91,8 @@
         </v-col>
       </v-card>
     </v-dialog>
+
+
 
     <v-dialog v-model="signupDialog" max-width="700">
       <v-card>
@@ -160,6 +164,8 @@
         </v-row>
       </v-card>
     </v-dialog>
+
+    
   </div>
 </template>
 
