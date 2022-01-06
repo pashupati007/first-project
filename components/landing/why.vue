@@ -97,8 +97,8 @@
   font-family: poppins;
 }
 
-/* .b {
+.b {
   border: 1px solid #ccc !important;
   border-radius: 50px 0 !important;
-} */
+}
 </style>
