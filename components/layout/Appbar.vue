@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-app-bar light flat>
-      <p class=" mt-3 ml-5 logo text-lg-h4 text-md-h5 text-sm-h6">
+      <p class="mt-3 ml-5 logo text-lg-h4 text-md-h5 text-sm-h6">
         LOGO
       </p>
 
@@ -118,27 +118,35 @@
 
                 <v-col cols="12">
                   <v-row>
-                  <v-subheader>Gender:</v-subheader>
-                  <v-checkbox label="male" value="Male" hide-details></v-checkbox>
-                  <v-checkbox label="female" value="Female" hide-details></v-checkbox>
+                    <v-subheader>Gender:</v-subheader>
+                    <v-checkbox
+                      label="male"
+                      value="Male"
+                      hide-details
+                    ></v-checkbox>
+                    <v-checkbox
+                      label="female"
+                      value="Female"
+                      hide-details
+                    ></v-checkbox>
                   </v-row>
                 </v-col>
 
                 <v-col cols="3"><v-subheader>Age:</v-subheader></v-col>
                 <v-text-field dense solo type="number"> </v-text-field>
 
-                <v-col cols="12"> 
+                <v-col cols="12">
                   <v-row>
                     <v-subheader>Blood Group:</v-subheader>
-                    <v-select :items="items" label="Select" solo ></v-select>
-                    </v-row>
+                    <v-select :items="items" label="Select" solo></v-select>
+                  </v-row>
                 </v-col>
 
-                <v-col cols="12"> 
+                <v-col cols="12">
                   <v-row>
                     <v-subheader>Country:</v-subheader>
-                    <v-select :items="items" label="Select" solo ></v-select>
-                    </v-row>
+                    <v-select :items="items" label="Select" solo></v-select>
+                  </v-row>
                 </v-col>
 
                 <v-col cols="" align="center" color="red"
@@ -168,7 +176,7 @@ export default {
 
 <style lang="css">
 .login {
-  color: #C71C1E;
+  color: #c71c1e;
 }
 .link {
   text-decoration: none;
@@ -179,16 +187,17 @@ export default {
   box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.39) !important;
 }
 
-.logo{
-  color: #C71C1E;
+.logo {
+  color: #c71c1e;
 }
 </style>
 
-
-// <script>
+//
+<script>
 //   export default {
 //     data: () => ({
 //       items: ['Foo', 'Bar', 'Fizz', 'Buzz'],
 //     }),
 //   }
-// </script>
+//
+</script>
