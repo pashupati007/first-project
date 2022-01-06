@@ -15,7 +15,7 @@
       <LandingAbout />
     </div>
 
-    <div class=" pa-10">
+    <div >
       <v-card 
       class="b pb-10">
         <LandingWhy />
