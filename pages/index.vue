@@ -16,9 +16,7 @@
     </div>
 
     <div >
-      
         <LandingWhy />
-      
     </div>
 
     <div>
@@ -75,8 +73,4 @@ export default {
   box-shadow: 0 25px 15px rgba(0, 0, 0, 0.16) !important;
 }
 
-.b {
-  border: 1px solid #ccc !important;
-  border-radius: 50px 0 !important;
-}
 </style>
