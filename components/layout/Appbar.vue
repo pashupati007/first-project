@@ -46,7 +46,7 @@
         <v-col>
           <v-row>
             <v-col cols="3">
-              <v-subheader> Email: </v-subheader>
+              <v-subheader class="mt-n5"> Email: </v-subheader>
             </v-col>
             <v-text-field
               dense
@@ -61,7 +61,7 @@
 
           <v-row>
             <v-col cols="3">
-              <v-subheader> Password: </v-subheader>
+              <v-subheader class="mt-n5"> Password: </v-subheader>
             </v-col>
             <v-text-field
               dense
@@ -70,6 +70,7 @@
               placeholder="Password"
               type="Password"
               label="Password"
+              
             >
             </v-text-field>
           </v-row>
@@ -115,23 +116,21 @@
                 <v-text-field autofocus dense solo type="text"> </v-text-field>
 
                 <v-col cols="3"><v-subheader>Email:</v-subheader></v-col>
-                <v-text-field dense solo type="email"> </v-text-field>
+                <v-text-field dense solo type="email"  class="mt-n7"> </v-text-field>
 
                 <v-col cols="3"><v-subheader>Phone Number:</v-subheader></v-col>
-                <v-text-field dense solo type="number"> </v-text-field>
+                <v-text-field dense solo type="number" class="mt-n14"> </v-text-field>
 
-                <v-col cols="12">
+                <v-col cols="12" class="mt-n16">
                   <v-row>
                     <v-subheader>Gender:</v-subheader>
                     <v-checkbox
                       label="male"
                       value="Male"
-                      hide-details
                     ></v-checkbox>
                     <v-checkbox
                       label="female"
                       value="Female"
-                      hide-details
                     ></v-checkbox>
                   </v-row>
                 </v-col>
@@ -142,14 +141,14 @@
                 <v-col cols="12">
                   <v-row>
                     <v-subheader>Blood Group:</v-subheader>
-                    <v-select :items="items" label="Select" solo></v-select>
+                    <v-select label="Select" solo></v-select>
                   </v-row>
                 </v-col>
 
                 <v-col cols="12">
                   <v-row>
                     <v-subheader>Country:</v-subheader>
-                    <v-select :items="items" label="Select" solo></v-select>
+                    <v-select label="Select" solo></v-select>
                   </v-row>
                 </v-col>
 
@@ -196,4 +195,5 @@ export default {
 .logo {
   color: #c71c1e;
 }
+
 </style>
