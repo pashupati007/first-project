@@ -1,7 +1,7 @@
 <template>
-  <div class="background">
+  <div class="background ">
     <v-row>
-      <v-col cols="2" class="mt-lg-16 pt-lg-16">
+      <v-col cols="2" class="mt-16 pt-16 hidden-sm-and-down">
         <v-img :src="require('~/assets/img/bottle.png')"></v-img>
       </v-col>
 
@@ -10,18 +10,17 @@
           :src="require('~/assets/img/contactback.png')"
           max-width="1270"
           max-height="600"
-          class="mt-n3 mb-lg-8"
+          class="mt-n3 mb-16"
         >
-          <v-row class="mt-lg-10 pt-lg-5">
-            <v-col>
-              <h1 class="h1blood mb-lg-n5" align="center">रागत चहियो ?</h1>
-              <br />
+          <v-row class="mt-10 pt-lg-5 ml-lg-n16" justify="center">
+              <h1 class="h1blood">रागत चहियो ?</h1>
+          </v-row>
+          <v-row justify="ceter">
               <p class="font wrap">
                 Fill in the form and send us your details.<br />
                 Someone will get back to you if it's an <br />
                 emergency.
               </p>
-            </v-col>
           </v-row>
 
           <v-row class="mt-10" justify="center">
@@ -34,8 +33,8 @@
             >
           </v-row>
 
-          <v-row class="mt-10 ml-16 pl-16">
-            <v-col cols="3 mt-16">
+          <v-row class="mt-lg-10 ml-lg-16 pl-lg-16">
+            <v-col cols="3" class="mt-lg-16">
               <v-list-item>
                 <v-list-item-content>
                   <h1 class="font font-weight-bold text-sm-left">
@@ -51,7 +50,7 @@
               </v-list-item>
             </v-col>
 
-            <v-col cols="3 mt-16">
+            <v-col cols="3 mt-lg-16">
               <v-list-item>
                 <v-list-item-content>
                   <h1 class="font font-weight-bold text-sm-left">
@@ -70,7 +69,7 @@
               </v-list-item>
             </v-col>
 
-            <v-col cols="3 mt-16">
+            <v-col cols="3 mt-lg-16">
               <v-list-item>
                 <v-list-item-content>
                   <h1 class="font font-weight-bold text-sm-left">
@@ -86,7 +85,7 @@
               </v-list-item>
             </v-col>
 
-            <v-col cols="2 mt-16" align="center">
+            <v-col cols="2 mt-lg-16" align="center">
               <div class="mt-10">
                 <v-icon color="blue" class="pa-1">mdi-facebook</v-icon>
                 <v-icon class="pa-1">mdi-twitter</v-icon>
@@ -98,9 +97,9 @@
         </v-img>
       </v-col>
     </v-row>
-
+    <v-divider class="mt-16 mb-lg-n16"></v-divider>
     <v-footer class="background mt-lg-16">
-      <p class="font pl-10 mb-0">
+      <p class="font pl-lg-10 mb-lg-0">
         Copyright 2022 Donation Group of Companies | All rights reserved |
         Privacy Policy
       </p>
@@ -124,6 +123,6 @@
   margin-left: 480px;
 }
 .font {
-  font-family: Poppins;
+  font-family: 'Poppins' ,sans-serif;
 }
 </style>
