@@ -6,30 +6,30 @@
       </p>
 
       <v-spacer></v-spacer>
+      <div class="hidden-md-and-down">
+        <v-btn text>
+          <span>Home</span>
+        </v-btn>
 
-      <v-btn text>
-        <span>Home</span>
-      </v-btn>
+        <v-btn text>
+          <span>About Us</span>
+        </v-btn>
 
-      <v-btn text>
-        <span>About Us</span>
-      </v-btn>
+        <v-btn text>
+          <span>Blogs</span>
+        </v-btn>
 
-      <v-btn text>
-        <span>Blogs</span>
-      </v-btn>
+        <v-btn text>
+          <span>Contact Us</span>
+        </v-btn>
 
-      <v-btn text>
-        <span>Contact Us</span>
-      </v-btn>
-
-      <v-btn text class="btnlog" @click="loginDialog = true">
-        <p class="login mt-4">
-          <v-icon small class="mr-2">mdi-account-outline</v-icon>
-          LOGIN
-        </p>
-      </v-btn>
-
+        <v-btn text class="btnlog" @click="loginDialog = true">
+          <p class="login mt-4">
+            <v-icon small class="mr-2">mdi-account-outline</v-icon>
+            LOGIN
+          </p>
+        </v-btn>
+      </div>
       <v-divider vertical class="red mx-5"></v-divider>
 
       <v-btn depressed color="red" dark @click="signupDialog = true">
@@ -37,7 +37,9 @@
       </v-btn>
     </v-app-bar>
 
-
+    <div class="hidden-lg-and-up">
+menu
+    </div>
 
     <v-dialog v-model="loginDialog" max-width="450" ma>
       <v-card class="logshadow pl-5 pt-10 pr-10 pb-10">
@@ -70,7 +72,6 @@
               placeholder="Password"
               type="Password"
               label="Password"
-              
             >
             </v-text-field>
           </v-row>
@@ -93,8 +94,6 @@
       </v-card>
     </v-dialog>
 
-
-
     <v-dialog v-model="signupDialog" max-width="700">
       <v-card>
         <v-row>
@@ -116,22 +115,18 @@
                 <v-text-field autofocus dense solo type="text"> </v-text-field>
 
                 <v-col cols="3"><v-subheader>Email:</v-subheader></v-col>
-                <v-text-field dense solo type="email"  class="mt-n7"> </v-text-field>
+                <v-text-field dense solo type="email" class="mt-n7">
+                </v-text-field>
 
                 <v-col cols="3"><v-subheader>Phone Number:</v-subheader></v-col>
-                <v-text-field dense solo type="number" class="mt-n14"> </v-text-field>
+                <v-text-field dense solo type="number" class="mt-n14">
+                </v-text-field>
 
                 <v-col cols="12" class="mt-n16">
                   <v-row>
                     <v-subheader>Gender:</v-subheader>
-                    <v-checkbox
-                      label="male"
-                      value="Male"
-                    ></v-checkbox>
-                    <v-checkbox
-                      label="female"
-                      value="Female"
-                    ></v-checkbox>
+                    <v-checkbox label="male" value="Male"></v-checkbox>
+                    <v-checkbox label="female" value="Female"></v-checkbox>
                   </v-row>
                 </v-col>
 
@@ -163,8 +158,6 @@
         </v-row>
       </v-card>
     </v-dialog>
-
-
   </div>
 </template>
 
@@ -195,5 +188,4 @@ export default {
 .logo {
   color: #c71c1e;
 }
-
 </style>
