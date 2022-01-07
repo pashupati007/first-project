@@ -15,8 +15,8 @@
           </v-row>
 
           <v-row>
-            <v-col cols="4" lg="4" md="10" sm="10"  align="center">
-              <v-card class="pa-3" height="300" width="275">
+            <v-col cols="12" lg="4" md="10" align="center">
+              <v-card class="pa-3 mx-auto" height="300" max-width="275">
                   <div>
                     <v-img
                       :src="require('~/assets/img/blog2.png')"
@@ -38,8 +38,8 @@
               </v-card>
             </v-col>
 
-            <v-col cols="8" lg="8" md="12" sm="12"  align="center">
-              <v-card class="pa-3" height="300" width="550">
+            <v-col cols="12" lg="8" md="12"  align="center">
+              <v-card class="pa-3" height="300" max-width="550">
                 <v-list-item>
                   <div>
                     <v-img
@@ -70,7 +70,7 @@
           </v-row>
 
           <v-row>
-            <v-col cols="6" lg="6" md="8" sm="12" align="center">
+            <v-col cols="12" lg="6" md="8" align="center">
               <v-card class="ml-9 pa-lg-3" height="200" width="370">
                 <v-list-item>
                   <div>
@@ -99,7 +99,7 @@
               </v-card>
             </v-col>
 
-            <v-col cols="6" lg="6" md="8" sm="12" align="center">
+            <v-col cols="12" lg="6" md="8" sm="12" align="center">
               <v-card class="pa-3 mr-6" height="200" width="370">
                 <v-list-item>
                   <div>
@@ -132,7 +132,7 @@
           </v-row>
         </v-col>
 
-        <v-col class="mt-lg-16" cols="3" lg="3" md="8" sm="8"  align="center">
+        <v-col class="mt-lg-16" cols="12" lg="3" md="8"  align="center">
           <v-card class="mt-3">
             <v-toolbar color="red" dark>
               <v-toolbar-title class="font-weight-bold ml-13"
