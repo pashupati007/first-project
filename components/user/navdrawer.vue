@@ -7,8 +7,6 @@
     width="256"
   >
     <v-navigation-drawer
-      class="deep-purple accent-4"
-      dark
       permanent
     >
       <v-list>
