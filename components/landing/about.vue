@@ -111,13 +111,13 @@
 .mid {
   background-image: url("~/assets/img/mid.png") !important;
   background-image: no-repeat;
-  background-position: 415px 225px;
+  background-position: 450px 200px;
   background-size: 250px;
 }
 
 .brd1 {
   border: 1px solid #ccc !important;
-  border-radius: 0px 25px !important;
+  border-radius: 10px 20px !important;
 }
 
 .head {
