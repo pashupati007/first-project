@@ -100,7 +100,6 @@
     </v-row>
 
     <v-footer class="background mt-lg-16">
-      <hr />
       <p class="font pl-10 mb-0">
         Copyright 2022 Donation Group of Companies | All rights reserved |
         Privacy Policy
