@@ -6,7 +6,7 @@
       </p>
 
       <v-spacer></v-spacer>
-      <div class="hidden-md-and-down">
+      <div class="hidden-sm-and-down">
         <v-btn text>
           <span>Home</span>
         </v-btn>
@@ -37,7 +37,7 @@
       </v-btn>
     </v-app-bar>
 
-    <div class="hidden-lg-and-up">
+    <div class="hidden-md-and-up">
 menu
     </div>
 
@@ -48,7 +48,7 @@ menu
         <v-col>
           <v-row>
             <v-col cols="3">
-              <v-subheader class="mt-n5"> Email: </v-subheader>
+              <v-subheader class="mt-n4"> Email: </v-subheader>
             </v-col>
             <v-text-field
               dense
@@ -63,7 +63,7 @@ menu
 
           <v-row>
             <v-col cols="3">
-              <v-subheader class="mt-n5"> Password: </v-subheader>
+              <v-subheader class="mt-n10"> Password: </v-subheader>
             </v-col>
             <v-text-field
               dense
@@ -72,6 +72,7 @@ menu
               placeholder="Password"
               type="Password"
               label="Password"
+              class="mt-n5"
             >
             </v-text-field>
           </v-row>
@@ -110,28 +111,28 @@ menu
               <h1 class="mt-5 mb-5 text-center">
                 Donor Registration
               </h1>
-              <v-row class="ma-n5">
-                <v-col cols="3"><v-subheader>Name:</v-subheader></v-col>
-                <v-text-field autofocus dense solo type="text"> </v-text-field>
-
+              <v-row>
+                <v-subheader>Name:</v-subheader>
+                <v-text-field autofocus dense solo type="text"  placeholder="Name"> </v-text-field>
+              </v-row>
                 <v-col cols="3"><v-subheader>Email:</v-subheader></v-col>
-                <v-text-field dense solo type="email" class="mt-n7">
+                <v-text-field dense solo type="email" class="mt-n7"  placeholder="Email">
                 </v-text-field>
 
                 <v-col cols="3"><v-subheader>Phone Number:</v-subheader></v-col>
-                <v-text-field dense solo type="number" class="mt-n14">
+                <v-text-field dense solo type="number" class="mt-n14"  placeholder="Phone Number">
                 </v-text-field>
 
                 <v-col cols="12" class="mt-n16">
                   <v-row>
                     <v-subheader>Gender:</v-subheader>
-                    <v-checkbox label="male" value="Male"></v-checkbox>
-                    <v-checkbox label="female" value="Female"></v-checkbox>
+                    <v-radio label="Male" value="Male" placeholder="Male"></v-radio>
+                    <v-radio label="Female" value="Female" placeholder="Female"></v-radio>
                   </v-row>
                 </v-col>
 
                 <v-col cols="3"><v-subheader>Age:</v-subheader></v-col>
-                <v-text-field dense solo type="number"> </v-text-field>
+                <v-text-field dense solo type="number"  placeholder="Age"> </v-text-field>
 
                 <v-col cols="12">
                   <v-row>
@@ -146,8 +147,8 @@ menu
                     <v-select label="Select" solo></v-select>
                   </v-row>
                 </v-col>
-
-                <v-col cols="" align="center" color="red"
+                <v-row>
+                <v-col cols="" align="center"
                   ><v-btn label="registered" type="submit"
                     >Registered</v-btn
                   ></v-col

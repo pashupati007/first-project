@@ -123,9 +123,9 @@
 .head {
   color: #c71c1e;
 }
-.font{
+/* .font{
   font-family: poppins;
-}
+} */
 .size{
   font-size: 13px;
 }
