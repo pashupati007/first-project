@@ -131,7 +131,7 @@
             </v-col>
           </v-row>
         </v-col>
-z
+
         <v-col class="mt-lg-16" cols="3" lg="3" md="8" sm="8"  align="center">
           <v-card class="mt-3">
             <v-toolbar color="red" dark>
