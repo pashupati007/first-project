@@ -27,7 +27,7 @@
                 outlined
                 height="180"
                 width="200"
-                class="abtbrd border mt-10"
+                class="brd1 border mt-10"
               >
                 <p class="text-center">
                   <v-icon color="red" class="mt-10">mdi-hand-heart</v-icon>
@@ -111,17 +111,13 @@
 .mid {
   background-image: url("~/assets/img/mid.png") !important;
   background-image: no-repeat;
-  background-position: 450px 200px;
+  background-position: 415px 225px;
   background-size: 250px;
 }
-.abtbrd{
-    border: 1px solid #ccc !important;
-    border-top-left-radius: 10px !important;
-    border-bottom-right-radius: 10px !important;
-}
+
 .brd1 {
   border: 1px solid #ccc !important;
-  border-radius: 10px 20px !important;
+  border-radius: 0px 25px !important;
 }
 
 .head {
