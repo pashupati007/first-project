@@ -1,5 +1,5 @@
 <template>
-  <div class="pb-lg-5" >
+  <div class="pb-lg-5">
     <v-container>
       <v-row>
         <v-col cols="9" lg="9" xs="2">
@@ -15,30 +15,29 @@
           </v-row>
 
           <v-row>
-            <v-col cols="4" lg="4" md="10" sm="10"  align="center">
+            <v-col cols="4" lg="4" md="10" sm="10" align="center">
               <v-card class="pa-3" height="300" width="275">
-                  <div>
-                    <v-img
-                      :src="require('~/assets/img/blog2.png')"
-                      max-height="110"
-                      max-width="100"
-                    >
-                    </v-img>
-                  </div>
-                      <h1 class="font font-weight-bold text-sm-left">
-                        Blood Journey
-                      </h1>
-                  <p class="font font-weight-medium text-sm-left">
-                        Blood banks play an important role 
-                        in the process of collecting blood 
-                        and managing. updating donations and 
-                        updating available blood types. Raster's 
-                        web based BBMS will address the issues.
-                      </p>
+                <div>
+                  <v-img
+                    :src="require('~/assets/img/blog2.png')"
+                    max-height="110"
+                    max-width="100"
+                  >
+                  </v-img>
+                </div>
+                <h1 class="font font-weight-bold text-sm-left">
+                  Blood Journey
+                </h1>
+                <p class="font font-weight-medium text-sm-left">
+                  Blood banks play an important role in the process of
+                  collecting blood and managing. updating donations and updating
+                  available blood types. Raster's web based BBMS will address
+                  the issues.
+                </p>
               </v-card>
             </v-col>
 
-            <v-col cols="8" lg="8" md="12" sm="12"  align="center">
+            <v-col cols="8" lg="8" md="12" sm="12" align="center">
               <v-card class="pa-3" height="300" width="550">
                 <v-list-item>
                   <div>
@@ -132,7 +131,7 @@
           </v-row>
         </v-col>
 
-        <v-col class="mt-lg-16" cols="3" lg="3" md="8" sm="8"  align="center">
+        <v-col class="mt-lg-16" cols="3" lg="3" md="8" sm="8" align="center">
           <v-card class="mt-3">
             <v-toolbar color="red" dark>
               <v-toolbar-title class="font-weight-bold ml-13"
@@ -236,7 +235,7 @@
 </template>
 
 <style>
-    .font{
-      font-family: Poppins;
-    }
+.font {
+  font-family: Poppins;
+}
 </style>
