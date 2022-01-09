@@ -38,7 +38,7 @@
     </v-app-bar>
 
     <div class="hidden-md-and-up">
-menu
+      menu
     </div>
 
     <v-dialog v-model="loginDialog" max-width="450" ma>
@@ -95,64 +95,107 @@ menu
       </v-card>
     </v-dialog>
 
-    <v-dialog v-model="signupDialog" max-width="700">
+    <v-dialog v-model="signupDialog" max-width="870" overflow="none">
       <v-card>
         <v-row>
-          <v-col cols="5" align="center">
-            <p>
+          <v-col cols="5" class=" red" align="center">
+            <h1 class="pa-16">
               I Want to <br />
               become <br />
               A Donar
-            </p>
+            </h1>
           </v-col>
 
           <v-col cols="7">
-            <v-card class="pa-10">
-              <h1 class="mt-5 mb-5 text-center">
+            <v-card class=" ma-10 pb-5" max-width="400">
+              <h1 class="pt-10 mb-10 text-center">
                 Donor Registration
               </h1>
-              <v-row>
-                <v-subheader>Name:</v-subheader>
-                <v-text-field autofocus dense solo type="text"  placeholder="Name"> </v-text-field>
-              </v-row>
-                <v-col cols="3"><v-subheader>Email:</v-subheader></v-col>
-                <v-text-field dense solo type="email" class="mt-n7"  placeholder="Email">
-                </v-text-field>
-
-                <v-col cols="3"><v-subheader>Phone Number:</v-subheader></v-col>
-                <v-text-field dense solo type="number" class="mt-n14"  placeholder="Phone Number">
-                </v-text-field>
-
-                <v-col cols="12" class="mt-n16">
-                  <v-row>
-                    <v-subheader>Gender:</v-subheader>
-                    <v-radio label="Male" value="Male" placeholder="Male"></v-radio>
-                    <v-radio label="Female" value="Female" placeholder="Female"></v-radio>
-                  </v-row>
-                </v-col>
-
-                <v-col cols="3"><v-subheader>Age:</v-subheader></v-col>
-                <v-text-field dense solo type="number"  placeholder="Age"> </v-text-field>
-
-                <v-col cols="12">
-                  <v-row>
-                    <v-subheader>Blood Group:</v-subheader>
-                    <v-select label="Select" solo></v-select>
-                  </v-row>
-                </v-col>
-
-                <v-col cols="12">
-                  <v-row>
-                    <v-subheader>Country:</v-subheader>
-                    <v-select label="Select" solo></v-select>
-                  </v-row>
-                </v-col>
-                <v-row>
-                <v-col cols="" align="center"
-                  ><v-btn label="registered" type="submit"
-                    >Registered</v-btn
-                  ></v-col
+              <v-row class="mt-n5">
+                <v-col cols="3"><v-subheader>Name:</v-subheader></v-col>
+                <v-col cols="8"><v-text-field
+                  autofocus
+                  dense
+                  solo
+                  type="text"
+                  placeholder="Name"
                 >
+                </v-text-field></v-col>
+              </v-row>
+
+              <v-row class="mt-n10"> 
+                <v-col cols="3"> <v-subheader>Email:</v-subheader></v-col>
+                <v-col cols="8"><v-text-field
+                  label="Email"
+                  dense
+                  solo
+                  type="email"
+                  placeholder="Email"
+                >
+                </v-text-field></v-col>
+              </v-row>
+
+              <v-row class="mt-n10">
+                <v-col cols="3"><v-subheader> Number:</v-subheader></v-col>
+                <v-col cols="8"><v-text-field
+                  label=" Number"
+                  dense
+                  solo
+                  type="number"
+                  placeholder=" Number"
+                >
+                </v-text-field></v-col>
+              </v-row>
+
+              <v-radio-group v-model="Male">
+                <v-row class="mt-n15">
+                  <v-col cols="3"><v-subheader>Gender:</v-subheader></v-col>
+                  <v-radio
+                    label="Male"
+                    value="Male"
+                    placeholder="Male"
+                    class="mt-2 ml-5"
+                  ></v-radio>
+                  <v-radio
+                    label="Female"
+                    value="Female"
+                    placeholder="Female"
+                  ></v-radio>
+                </v-row>
+              </v-radio-group>
+
+              <v-row class="mt-n10">
+                <v-col cols="3"><v-subheader>Age:</v-subheader></v-col>
+                <v-col cols="8"><v-text-field
+                  label="Age"
+                  dense
+                  solo
+                  type="number"
+                  placeholder="Age"
+                >
+                </v-text-field></v-col>
+              </v-row>
+
+              <v-row class="mt-n10">
+               <v-col cols="3"> <v-subheader>Blood Group:</v-subheader></v-col>
+                <v-col cols="8"><v-select label="Select" dense solo :items="select1"></v-select></v-col>
+              </v-row>
+
+              <v-row class="mt-n10">
+                <v-col cols="3"><v-subheader>Country:</v-subheader></v-col>
+                <v-col cols="8"><v-select label="Select" dense solo :items="select2"></v-select></v-col>
+              </v-row>
+
+              <v-row class="mt-n5 mb-5" justify="center">
+                <v-btn
+                  label="Registered"
+                  type="submit"
+                  placeholder="Registered"
+                  color="red"
+                  dark
+                >
+                  Registered
+                </v-btn>
               </v-row>
             </v-card>
           </v-col>
@@ -168,6 +211,26 @@ export default {
     return {
       loginDialog: false,
       signupDialog: false,
+      select1: [
+        { text: "A" },
+        { text: "B" },
+        { text: "O" },
+        { text: "AB" },
+        { text: "-AB" },
+        { text: "-A" },
+        { text: "-B" },
+        { text: "-O" },
+      ],
+      select2: [
+        { text: "Nepal" },
+        { text: "India" },
+        { text: "China" },
+        { text: "USA" },
+        { text: "UAE" },
+        { text: "UK" },
+        { text: "Auatrila" },
+        { text: "Korea" },
+      ],
     };
   },
 };
