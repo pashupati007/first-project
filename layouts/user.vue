@@ -2,9 +2,8 @@
   <div>
     <v-app style="background-color: #eaeaea;">
       <UserTool />
-
-      <UserNavdrawer />
       
+      <UserNavdrawer />
       <nuxt />
     </v-app>
   </div>
