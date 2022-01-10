@@ -1,15 +1,14 @@
 <template>
   <div>
-
     <div>
-<UserTool />
+      <UserTool />
     </div>
 
     <div>
-            <UserNavdrawer />
+      <UserNavdrawer />
     </div>
 
-    <v-container>
+  
       <v-row>
         <v-col cols="12" lg="8"> </v-col>
 
@@ -18,9 +17,7 @@
             <UserDonarsearch />
           </div>
         </v-col>
-
       </v-row>
-    </v-container>
 
   </div>
 </template>
