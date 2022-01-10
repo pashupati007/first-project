@@ -2,7 +2,11 @@
   <div>
 
       <v-row>
-        <v-col cols="12" lg="8"> </v-col>
+        <v-col cols="12" lg="8"> 
+          <div>
+            <User2 />
+          </div>
+        </v-col>
 
         <v-col cols="12" lg="3">
           <div>
