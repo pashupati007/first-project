@@ -1,11 +1,7 @@
 <template>
-  <v-card
-    flat
-    height="200px"
-  >
+  <v-card flat height="200px">
     <v-toolbar dense>
-      
-<!-- <v-app-bar-nav-icon></v-app-bar-nav-icon> -->
+      <!-- <v-app-bar-nav-icon></v-app-bar-nav-icon> -->
 
       <v-spacer></v-spacer>
       <v-spacer></v-spacer>
@@ -31,7 +27,7 @@
 </template>
 
 <style>
-#magnify{
+#magnify {
   transform: rotateY(180deg);
 }
 </style>
