@@ -1,19 +1,17 @@
 <template>
   <v-card
-    color="grey lighten-4"
     flat
     height="200px"
-    tile
   >
     <v-toolbar dense>
-      <v-app-bar-nav-icon></v-app-bar-nav-icon>
+      
+<!-- <v-app-bar-nav-icon></v-app-bar-nav-icon> -->
 
-      <v-toolbar-title>Title</v-toolbar-title>
-
+      <v-spacer></v-spacer>
       <v-spacer></v-spacer>
 
       <v-btn icon>
-        <v-icon>mdi-magnify</v-icon>
+        <v-icon>mdi-home-outline</v-icon>
       </v-btn>
 
       <v-btn icon>
@@ -21,8 +19,19 @@
       </v-btn>
 
       <v-btn icon>
-        <v-icon>mdi-dots-vertical</v-icon>
+        <v-icon icon>mdi-bell-outline</v-icon>
       </v-btn>
+
+      <v-btn icon>
+        <v-icon id="magnify">mdi-magnify</v-icon>
+      </v-btn>
+      <v-spacer></v-spacer>
     </v-toolbar>
   </v-card>
 </template>
+
+<style>
+#magnify{
+  transform: rotateY(180deg);
+}
+</style>
