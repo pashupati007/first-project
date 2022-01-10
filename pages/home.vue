@@ -4,7 +4,7 @@
       <v-row>
         <v-col cols="12" lg="8"> 
           <div>
-            <User2 />
+            <UserHome />
           </div>
         </v-col>
 
