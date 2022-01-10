@@ -25,21 +25,21 @@
           </v-list>
 
           <v-list class="ml-16">
-              <v-list-item>
-                <v-list-item-content>
-                  <v-list-item-title>
-                    Bloodfeeds
-                  </v-list-item-title>
-                </v-list-item-content>
-              </v-list-item>
+            <v-list-item>
+              <v-list-item-content>
+                <v-list-item-title>
+                  Bloodfeeds
+                </v-list-item-title>
+              </v-list-item-content>
+            </v-list-item>
 
-              <v-list-item>
-                <v-list-item-content>
-                  <v-list-item-title>
-                    Blood Banks
-                  </v-list-item-title>
-                </v-list-item-content>
-              </v-list-item>
+            <v-list-item>
+              <v-list-item-content>
+                <v-list-item-title>
+                  Blood Banks
+                </v-list-item-title>
+              </v-list-item-content>
+            </v-list-item>
 
             <v-list-item>
               <v-list-item-content>
@@ -90,23 +90,17 @@
 export default {
   data() {
     return {
-      
-      navdslt : [
-        { text: " Ready to donate " },
-        { text: " Ready to donate " },
-      ],
-
+      navdslt: [{ text: " Ready to donate " }, { text: " Ready to donate " }],
     };
   },
 };
 </script>
 
-
 <style>
 .navtitle {
   color: red;
 }
-.navfooter{
+.navfooter {
   color: white;
 }
 </style>
