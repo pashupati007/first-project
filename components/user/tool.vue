@@ -1,5 +1,5 @@
 <template>
-  <v-card flat height="200px">
+  <v-card flat>
     <v-toolbar dense>
       <!-- <v-app-bar-nav-icon></v-app-bar-nav-icon> -->
 
