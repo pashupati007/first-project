@@ -1,6 +1,6 @@
 <template>
-  <v-card flat>
-    <v-toolbar dense>
+  <v-app-bar dense flat app clipped-left permanent>
+    
       <!-- <v-app-bar-nav-icon></v-app-bar-nav-icon> -->
 
       <v-spacer></v-spacer>
@@ -22,8 +22,8 @@
         <v-icon id="magnify">mdi-magnify</v-icon>
       </v-btn>
       <v-spacer></v-spacer>
-    </v-toolbar>
-  </v-card>
+ 
+  </v-app-bar>
 </template>
 
 <style>

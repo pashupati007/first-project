@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-card class="ml-10 mt-10" width="410" height="580">
+    <v-card class="ml-10 mt-16" width="410" height="580">
 
       <v-toolbar class="toolbaropacity" dense color="rgba(241, 12, 5, 0.5)">
            <v-spacer></v-spacer>
@@ -69,7 +69,7 @@
       </v-list>
 
       <div class="text-center">
-           <v-btn color="#DD1F25" dark width="340" Elevation>
+           <v-btn color="#DD1F25" dark width="300" Elevation>
         <h3>FIND</h3>
       </v-btn>
       </div>

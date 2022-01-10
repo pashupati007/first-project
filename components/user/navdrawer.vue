@@ -2,13 +2,12 @@
   <div>
     <container>
 
-      <v-navigation-drawer permanent class="ml-15 mt-15">
-          <v-card>
+      <v-navigation-drawer permanent app clipped class="ml-15 mt-15">
           <v-list dense>
             <v-list-item>
 
               <v-list-item-avatar>
-                <img :src="require('~/assets/img/blog2.png')" alt="" />
+                <img :src="require('~/assets/img/blog2.png')">
               </v-list-item-avatar>
 
               <v-list-item-content>
@@ -87,7 +86,6 @@
             </p>
           </v-footer>
           
-      </v-card>
       </v-navigation-drawer>
     </container>
     
@@ -98,7 +96,8 @@
 export default {
   data() {
     return {
-      navdslt: [{ text: " Ready to donate " }, { text: " Ready to donate " }],
+      navdslt: [{ text: " Ready to donate " }, 
+      { text: " Ready to donate " }],
     };
   },
 };

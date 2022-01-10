@@ -1,12 +1,5 @@
 <template>
   <div>
-    <div>
-      <UserTool />
-    </div>
-
-    <div>
-      <UserNavdrawer />
-    </div>
 
       <v-row>
         <v-col cols="12" lg="8"> </v-col>
@@ -23,3 +16,8 @@
 
   </div>
 </template>
+<script>
+export default {
+  layout: "user",
+};
+</script>
