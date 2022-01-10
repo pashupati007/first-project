@@ -1,7 +1,7 @@
 <template>
   <div>
     <container>
-      <v-navigation-drawer permanent>
+      <v-navigation-drawer permanent  class="ml-15 mt-15">
         <v-card>
           <v-list dense>
             <v-list-item>
