@@ -2,9 +2,8 @@
   <div>
     <container>
 
-      <v-navigation-drawer permanent  class="ml-15 mt-15">
-        <v-card>
-
+      <v-navigation-drawer permanent class="ml-15 mt-15">
+          <v-card>
           <v-list dense>
             <v-list-item>
 
@@ -20,7 +19,7 @@
                 </v-list-item-title>
 
                 <v-list-item-subtitle>
-                  <v-select solo :items="navdslt">
+                  <v-select solo :items="navdslt" label="Ready to donate">
                     Ready to donate
                   </v-select>
                 </v-list-item-subtitle>
@@ -87,8 +86,8 @@
               Logout
             </p>
           </v-footer>
-
-        </v-card>
+          
+      </v-card>
       </v-navigation-drawer>
     </container>
     
