@@ -2,7 +2,7 @@
   <div>
     <v-card class="ml-10 mt-10" width="410" height="580">
 
-      <v-toolbar dense color="#DD1F25">
+      <v-toolbar class="toolbaropacity" dense color="#DD1F25">
            <v-spacer></v-spacer>
             <v-toolbar-title>
                 <h2>Donar Search</h2>
@@ -76,3 +76,9 @@
     </v-card>
   </div>
 </template>
+
+<style>
+.toolbaropacity{
+    opacity: 0.5;
+}
+</style>
