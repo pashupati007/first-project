@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-app style="background-color: #eaeaea;">
-      <UserApbar />
+      <UserAppbar />
       <UserNavdrawer />
       <Nuxt />
     </v-app>
