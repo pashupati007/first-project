@@ -1,7 +1,7 @@
 <template>
     <div>
         <v-container>
-            <v-card width="400">
+            <v-card width="600" height="500">
                 <v-list>
                     <v-list-item>
                         <v-list-item-content></v-list-item-content>
