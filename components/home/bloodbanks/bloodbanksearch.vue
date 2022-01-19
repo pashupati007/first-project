@@ -1,0 +1,48 @@
+<template>
+ <div>
+   <v-container>
+    <v-card class="mt-15" width="410" height="580">
+
+      <v-toolbar dense color="rgba(241, 12, 5, 0.5)">
+           <v-spacer></v-spacer>
+            <v-toolbar-title>
+                <h2>Blood Bank Search</h2>
+            </v-toolbar-title>
+             <v-spacer></v-spacer>
+            <v-app-bar-nav-icon></v-app-bar-nav-icon>
+      </v-toolbar>
+
+      <v-list class="ml-10">
+        <v-list-item>
+          <v-list-content>
+            <v-list-item-title>
+              <h2>Country</h2>
+            </v-list-item-title>
+            <v-list-item-subtitle>
+              <v-select solo dense label="Select your country"> </v-select>
+            </v-list-item-subtitle>
+          </v-list-content>
+        </v-list-item>
+
+
+        <v-list-item>
+          <v-list-content>
+            <v-list-item-title>
+              <h2>City</h2>
+            </v-list-item-title>
+            <v-list-item-subtitle>
+              <v-select solo dense label="Select your City"> </v-select>
+            </v-list-item-subtitle>
+          </v-list-content>
+        </v-list-item>
+        
+    </v-list>
+      <div class="text-center">
+           <v-btn color="#DD1F25" dark width="240" Elevation>
+        <h3>Search</h3>
+      </v-btn>
+      </div>
+    </v-card>
+   </v-container>
+ </div>
+</template>
