@@ -39,6 +39,6 @@
 <script>
 export default {
 
-  layout: "default",
+  layout: "homelayouts",
 };
 </script>

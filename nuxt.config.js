@@ -3,8 +3,8 @@ import colors from 'vuetify/es5/util/colors'
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - first',
-    title: 'first',
+    titleTemplate: '%s - Frontend',
+    title: 'Frontend',
     htmlAttrs: {
       lang: 'en'
     },
@@ -38,7 +38,44 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/axios',
+    '@nuxtjs/auth-next'
   ],
+   auth: {
+    strategies: {
+      'laravelSanctum': {
+        provider: 'laravel/sanctum',
+        url: 'https://mutorsback.herokuapp.com',
+        user: {
+          property: false,
+          autoFetch: false
+        },
+        endpoints: {
+          login: { url: "/api/login", method: "post" },
+          logout: { url: "/api/logout", method: "get" },
+          user: { url: "/api/user", method: "get" }
+        }
+      },
+      'local': {
+        token: {
+          property: "token",
+          required: true,
+          maxAge: 1800 * 5
+        },
+        user: {
+          property: false,
+          autoFetch: true
+        },
+        endpoints: {
+          login: { url: "/login", method: "post" },
+          logout: { url: "/logout", method: "get" },
+          user: { url: "/user", method: "get" }
+        }
+      },
+    },
+    redirect:false
+  },
+
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
